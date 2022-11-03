@@ -15,18 +15,14 @@ class Login(QWidget, Ui_Form):
         self.btn_tabela.clicked.connect(self.generate_table)
 
     def copy_path(self):
-        self.path = self.txt_caminho.text()
-        print(self.path)
+        path = self.txt_caminho.text()
+        path = path[1:len(path)-1]
+        print(path)
+        return path
 
     def generate_table(self):
-        if self.path is not None:
-            df = pd.read_csv(self.path, encoding="UTF-8", sep=";")
-            print(df)
-        else:
-            msg = QMessageBox()
-            msg.setWindowTitle('Erro de Caminho')
-            msg.setIcon(QMessageBox.Information)
-            msg.setText('Primeiro insira um caminho na LineEdit')
+        df = pd.read_csv(fr"{self.copy_path()}", encoding="UTF-8", sep=";")
+        print(df)
 
 
 app = QApplication(sys.argv)
