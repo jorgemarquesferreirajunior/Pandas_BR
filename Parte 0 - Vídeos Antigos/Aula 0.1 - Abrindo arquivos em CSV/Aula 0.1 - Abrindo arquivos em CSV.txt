@@ -1,0 +1,17 @@
+OBS:Sempre é necessário importar a biblioteca pandas primeiro....
+--------------------------------------------------------------------------------------------------
+#Sintaxe para abrir um arquivo CSV: df = pd.read_csv("caminho do arquivo",
+                                         enconding="UTF-8", sep="; header=0)
+
+Inferências:
+    1°) o dado "df" é um dataframe
+    2°) Quando o arquivo CSV esta na mesma pasta do código em Python, no lugar de voce copiar
+        o "caminho do arquivo" basta apenas colocar o nome do arquivo. Ex: Lista de Contatos.CSV
+    3°) enconding é o tipo de codificação do arquivo, isto é, refere-se ao formato que as palavras
+        são escritas, ou seja, a presença ou não de acentuação, cedilha,... Para saber o enconding
+        do arquivo, basta abri-lo no note pad++ e ir até a aba de enconding.
+    4°) sep é o tipo de separador de dados do arquivo em CSV, para saber isso, basta abri-lo e verificar
+        qual é o separador comum entre as palavras
+    5°) header é o parâmetro usado para definir qual será a primeira linha do dataframe
+--------------------------------------------------------------------------------------------------
+

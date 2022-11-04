@@ -1,0 +1,6 @@
+    É possível sselecionar qual aba abrir a partir do arquivo excel, caso haja mais de uma
+aba para selecionar. Para isso usamos o parâmetro sheet_name e logo depois exatamente o nome
+da aba ou entao o índice em que ela se encontra no arquivo em excel. Lembrando que indices
+inicia a partir do 0 (zero).
+    Ex: df = pd.read_excel("Dados.xlsx", sheet_name="Plan1")
+     ou df = pd.read_excel("Dados.xlsx", sheet_name=0)
