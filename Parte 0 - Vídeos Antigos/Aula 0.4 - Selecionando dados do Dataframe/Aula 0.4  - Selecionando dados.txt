@@ -1,0 +1,13 @@
+    Para mostrar uma coluna específica, basta seguir a sintaxe:
+        print(nomedodataframe["nomedacoluna"])
+    Ou entao esta sintaxe:
+        print(nomedodataframe.nomedacoluna)
+
+    OBS: Atalho para comentar várias linhas no pycharm: CTRL + /
+        Como mostrar todas as linhas e colunas de um Dataframe no terminal do Pycharm:
+        Basta escrever estas duas linhas de código logo após importar a biblioteca pandas
+            pd.set_option("display.max_columns", None)
+            pd.set_option("display.max_rows", None)
+
+    Para selecionar um range de colunas, basta colocar os nomes das colunas dentro de uma lista:
+        cadastro = dados[["Nome","Sobrenome"]]
