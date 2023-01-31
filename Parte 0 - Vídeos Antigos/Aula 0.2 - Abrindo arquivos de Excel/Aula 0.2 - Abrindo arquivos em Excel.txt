@@ -4,3 +4,4 @@ da aba ou entao o índice em que ela se encontra no arquivo em excel. Lembrando 
 inicia a partir do 0 (zero).
     Ex: df = pd.read_excel("Dados.xlsx", sheet_name="Plan1")
      ou df = pd.read_excel("Dados.xlsx", sheet_name=0)
+
